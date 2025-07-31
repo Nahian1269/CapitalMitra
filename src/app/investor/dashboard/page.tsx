@@ -3,11 +3,10 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
 import { Separator } from "@/components/ui/separator";
 import { Badge } from "@/components/ui/badge";
 import { Edit, Globe, Linkedin, Briefcase, DollarSign, TrendingUp, History, Lightbulb } from "lucide-react";
+import { DashboardLayout } from "@/components/dashboard-layout";
 
 export default function InvestorDashboard() {
   const investor = {
@@ -31,9 +30,7 @@ export default function InvestorDashboard() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900">
-      <Header />
-      <main className="flex-1 p-4 sm:p-6 md:p-8">
+    <DashboardLayout userType="investor">
         <div className="max-w-4xl mx-auto">
           <Card>
             <CardHeader className="flex flex-row items-start justify-between">
@@ -107,8 +104,6 @@ export default function InvestorDashboard() {
             </CardContent>
           </Card>
         </div>
-      </main>
-      <Footer />
-    </div>
+    </DashboardLayout>
   );
 }
