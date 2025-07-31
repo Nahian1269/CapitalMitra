@@ -21,3 +21,4 @@ To get started, take a look at src/app/page.tsx.
 This will start the development server, and you can view your application by opening a web browser and navigating to `http://localhost:9002`. Any changes you make to the code will automatically be reflected in the browser.
 # CapitalMitra
 # CapitalMitra
+# CapitalMitra

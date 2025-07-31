@@ -9,7 +9,7 @@ export function Header() {
         <Mountain className="h-6 w-6 text-primary" />
         <span className="sr-only">CapitalMitra Connect</span>
       </Link>
-      <span className="ml-2 font-bold font-headline text-lg">CapitalMitra Connect</span>
+      <span className="ml-2 font-bold font-headline text-lg">CapitalMitra</span>
       <nav className="ml-auto flex gap-4 sm:gap-6 items-center">
         <Button asChild variant="ghost" size="icon">
             <Link href="/login-selector">
