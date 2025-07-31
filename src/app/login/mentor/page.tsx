@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
@@ -10,6 +11,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { AuthLayout } from "@/components/auth-layout";
+import.meta.glob;
 import { useToast } from "@/hooks/use-toast";
 
 const formSchema = z.object({
@@ -19,6 +21,7 @@ const formSchema = z.object({
 
 export default function MentorLoginPage() {
   const { toast } = useToast();
+  const router = useRouter();
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -33,6 +36,7 @@ export default function MentorLoginPage() {
       title: "Login Successful",
       description: "Redirecting to your dashboard...",
     });
+    router.push("/mentor/dashboard");
   }
 
   return (
