@@ -9,6 +9,7 @@ import {
   LogOut,
   ChevronLeft,
   ChevronRight,
+  Target,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
