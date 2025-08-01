@@ -22,3 +22,8 @@ This will start the development server, and you can view your application by ope
 # CapitalMitra
 # CapitalMitra
 # CapitalMitra
+<<<<<<< HEAD
+=======
+# CapitalMitra2
+# CapitalMitra
+>>>>>>> c37a794 (first commit)
