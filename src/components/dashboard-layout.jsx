@@ -27,8 +27,8 @@ export function DashboardLayout({ children, userType }) {
         if(userType === 'client') {
             return [
                 { href: "/client/dashboard", icon: Home, label: "Dashboard" },
-                { href: "#", icon: Briefcase, label: "Find Investors" },
-                { href: "#", icon: Users, label: "Find Mentors" },
+                { href: "/client/find-investors", icon: Briefcase, label: "Find Investors" },
+                { href: "/client/find-mentors", icon: Users, label: "Find Mentors" },
                 { href: "#", icon: User, label: "Profile" },
                 { href: "#", icon: Settings, label: "Settings" },
             ]
@@ -36,16 +36,16 @@ export function DashboardLayout({ children, userType }) {
         if(userType === 'investor') {
             return [
                 { href: "/investor/dashboard", icon: Home, label: "Dashboard" },
-                { href: "/client/dashboard", icon: Target, label: "Find Clients" },
-                { href: "/mentor/dashboard", icon: Users, label: "Find Mentors" },
+                { href: "#", icon: Target, label: "Find Clients" },
+                { href: "#", icon: Users, label: "Find Mentors" },
                 { href: "#", icon: User, label: "Profile" },
                 { href: "#", icon: Settings, label: "Settings" },
             ]
         }
         return [
             { href: "/mentor/dashboard", icon: Home, label: "Dashboard" },
-            { href: "/client/dashboard", icon: Target, label: "Find Clients" },
-            { href: "/investor/dashboard", icon: Briefcase, label: "Find Investors" },
+            { href: "#", icon: Target, label: "Find Clients" },
+            { href: "#", icon: Briefcase, label: "Find Investors" },
             { href: "#", icon: User, label: "Profile" },
             { href: "#", icon: Settings, label: "Settings" },
         ]
