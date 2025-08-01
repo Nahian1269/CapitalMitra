@@ -36,16 +36,16 @@ export function DashboardLayout({ children, userType }) {
         if(userType === 'investor') {
             return [
                 { href: "/investor/dashboard", icon: Home, label: "Dashboard" },
-                { href: "#", icon: Target, label: "Find Clients" },
-                { href: "#", icon: Users, label: "Find Mentors" },
+                { href: "/investor/find-clients", icon: Target, label: "Find Clients" },
+                { href: "/investor/find-mentors", icon: Users, label: "Find Mentors" },
                 { href: "#", icon: User, label: "Profile" },
                 { href: "#", icon: Settings, label: "Settings" },
             ]
         }
         return [
             { href: "/mentor/dashboard", icon: Home, label: "Dashboard" },
-            { href: "#", icon: Target, label: "Find Clients" },
-            { href: "#", icon: Briefcase, label: "Find Investors" },
+            { href: "/mentor/find-clients", icon: Target, label: "Find Clients" },
+            { href: "/mentor/find-investors", icon: Briefcase, label: "Find Investors" },
             { href: "#", icon: User, label: "Profile" },
             { href: "#", icon: Settings, label: "Settings" },
         ]
