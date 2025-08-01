@@ -45,7 +45,7 @@ export default function Home() {
                 width="650"
                 height="450"
                 alt="Hero"
-                data-ai-hint="collaboration business"
+                data-ai-hint="collaboration business meeting"
                 className="mx-auto aspect-[4/3] overflow-hidden rounded-xl object-cover shadow-2xl"
               />
             </div>
@@ -70,9 +70,9 @@ export default function Home() {
                   <CardTitle className="font-headline">For Clients</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-2">
-                    <p className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-green-500 flex-shrink-0" /><span>Connect with investors who match your vision.</span></p>
-                    <p className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-green-500 flex-shrink-0" /><span>Receive guidance from industry experts.</span></p>
-                    <p className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-green-500 flex-shrink-0" /><span>Secure the funding to bring your ideas to life.</span></p>
+                    <p className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-primary flex-shrink-0" /><span>Connect with investors who match your vision.</span></p>
+                    <p className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-primary flex-shrink-0" /><span>Receive guidance from industry experts.</span></p>
+                    <p className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-primary flex-shrink-0" /><span>Secure the funding to bring your ideas to life.</span></p>
                 </CardContent>
               </Card>
               <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
@@ -81,9 +81,9 @@ export default function Home() {
                   <CardTitle className="font-headline">For Investors</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-2">
-                    <p className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-green-500 flex-shrink-0" /><span>Discover curated, high-potential ventures.</span></p>
-                    <p className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-green-500 flex-shrink-0" /><span>Diversify your portfolio with promising startups.</span></p>
-                    <p className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-green-500 flex-shrink-0" /><span>Engage with innovative entrepreneurs.</span></p>
+                    <p className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-primary flex-shrink-0" /><span>Discover curated, high-potential ventures.</span></p>
+                    <p className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-primary flex-shrink-0" /><span>Diversify your portfolio with promising startups.</span></p>
+                    <p className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-primary flex-shrink-0" /><span>Engage with innovative entrepreneurs.</span></p>
                 </CardContent>
               </Card>
               <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
@@ -92,9 +92,9 @@ export default function Home() {
                   <CardTitle className="font-headline">For Mentors</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-2">
-                    <p className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-green-500 flex-shrink-0" /><span>Share your expertise with the next generation.</span></p>
-                    <p className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-green-500 flex-shrink-0" /><span>Help shape the future of innovative businesses.</span></p>
-                    <p className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-green-500 flex-shrink-0" /><span>Expand your network and make an impact.</span></p>
+                    <p className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-primary flex-shrink-0" /><span>Share your expertise with the next generation.</span></p>
+                    <p className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-primary flex-shrink-0" /><span>Help shape the future of innovative businesses.</span></p>
+                    <p className="flex items-start"><CheckCircle className="w-5 h-5 mr-2 text-primary flex-shrink-0" /><span>Expand your network and make an impact.</span></p>
                 </CardContent>
               </Card>
             </div>
@@ -152,7 +152,7 @@ export default function Home() {
                       </div>
                       <div className="flex items-center gap-4 pt-4">
                         <Avatar>
-                           <AvatarImage src="https://placehold.co/40x40.png" />
+                           <AvatarImage src="https://placehold.co/40x40.png" data-ai-hint="woman portrait" />
                            <AvatarFallback>JC</AvatarFallback>
                         </Avatar>
                         <div>
@@ -172,7 +172,7 @@ export default function Home() {
                       </div>
                       <div className="flex items-center gap-4 pt-4">
                         <Avatar>
-                           <AvatarImage src="https://placehold.co/40x40.png" />
+                           <AvatarImage src="https://placehold.co/40x40.png" data-ai-hint="man portrait" />
                            <AvatarFallback>JD</AvatarFallback>
                         </Avatar>
                         <div>
@@ -192,7 +192,7 @@ export default function Home() {
                       </div>
                       <div className="flex items-center gap-4 pt-4">
                         <Avatar>
-                           <AvatarImage src="https://placehold.co/40x40.png" />
+                           <AvatarImage src="https://placehold.co/40x40.png" data-ai-hint="woman professional" />
                            <AvatarFallback>SA</AvatarFallback>
                         </Avatar>
                         <div>

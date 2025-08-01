@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mountain } from "lucide-react";
+import Image from "next/image";
 
 export function AuthLayout({ children }) {
   return (
@@ -7,7 +7,7 @@ export function AuthLayout({ children }) {
       <div className="w-full max-w-md space-y-6">
         <div className="flex flex-col items-center">
           <Link href="/" className="mb-4 flex items-center space-x-2">
-            <Mountain className="h-8 w-8 text-primary" />
+            <Image src="/logo.png" alt="CapitalMitra Logo" width={32} height={32} className="h-8 w-8" />
             <span className="text-2xl font-bold text-primary font-headline">CapitalMitra Connect</span>
           </Link>
         </div>

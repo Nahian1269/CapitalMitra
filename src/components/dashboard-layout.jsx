@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import {
   Bell,
   Home,
@@ -19,8 +20,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Mountain } from "lucide-react";
-import React, { useState } from "react";
+import React from "react";
 
 export function DashboardLayout({ children, userType }) {
     const getNavItems = () => {
@@ -36,16 +36,16 @@ export function DashboardLayout({ children, userType }) {
         if(userType === 'investor') {
             return [
                 { href: "/investor/dashboard", icon: Home, label: "Dashboard" },
-                { href: "#", icon: Target, label: "Find Clients" },
-                { href: "#", icon: Users, label: "Find Mentors" },
+                { href: "/client/dashboard", icon: Target, label: "Find Clients" },
+                { href: "/mentor/dashboard", icon: Users, label: "Find Mentors" },
                 { href: "#", icon: User, label: "Profile" },
                 { href: "#", icon: Settings, label: "Settings" },
             ]
         }
         return [
             { href: "/mentor/dashboard", icon: Home, label: "Dashboard" },
-            { href: "#", icon: Target, label: "Find Clients" },
-            { href: "#", icon: Briefcase, label: "Find Investors" },
+            { href: "/client/dashboard", icon: Target, label: "Find Clients" },
+            { href: "/investor/dashboard", icon: Briefcase, label: "Find Investors" },
             { href: "#", icon: User, label: "Profile" },
             { href: "#", icon: Settings, label: "Settings" },
         ]
@@ -57,7 +57,7 @@ export function DashboardLayout({ children, userType }) {
         <div className="flex h-full max-h-screen flex-col gap-2">
           <div className="flex h-14 items-center border-b px-4 lg:h-[60px] lg:px-6">
             <Link href="/" className="flex items-center gap-2 font-semibold">
-              <Mountain className="h-6 w-6" />
+              <Image src="/logo.png" alt="CapitalMitra Logo" width={24} height={24} className="h-6 w-6" />
               <span className="">CapitalMitra</span>
             </Link>
             <Button variant="outline" size="icon" className="ml-auto h-8 w-8">
@@ -100,7 +100,7 @@ export function DashboardLayout({ children, userType }) {
       <div className="flex flex-col">
         <header className="flex h-14 items-center gap-4 border-b bg-muted/40 px-4 lg:h-[60px] lg:px-6">
              <Button variant="ghost" size="icon" className="md:hidden">
-                <Mountain className="h-6 w-6" />
+                <Image src="/logo.png" alt="CapitalMitra Logo" width={24} height={24} className="h-6 w-6" />
                 <span className="sr-only">Home</span>
             </Button>
           <div className="w-full flex-1">
