@@ -38,6 +38,7 @@ export function DashboardLayout({ children, userType }) {
                 { href: "/client/dashboard", icon: Home, label: "Dashboard" },
                 { href: "/client/find-investors", icon: Briefcase, label: "Find Investors" },
                 { href: "/client/find-mentors", icon: Users, label: "Find Mentors" },
+                { href: "/client/find-advisors", icon: Handshake, label: "Find Advisors" },
                 ...commonItems
             ]
         }
@@ -46,6 +47,7 @@ export function DashboardLayout({ children, userType }) {
                 { href: "/investor/dashboard", icon: Home, label: "Dashboard" },
                 { href: "/investor/find-clients", icon: Target, label: "Find Startups" },
                 { href: "/investor/find-mentors", icon: Users, label: "Find Mentors" },
+                { href: "/investor/find-advisors", icon: Handshake, label: "Find Advisors" },
                 ...commonItems
             ]
         }
@@ -54,6 +56,7 @@ export function DashboardLayout({ children, userType }) {
                 { href: "/mentor/dashboard", icon: Home, label: "Dashboard" },
                 { href: "/mentor/find-clients", icon: Target, label: "Find Startups" },
                 { href: "/mentor/find-investors", icon: Briefcase, label: "Find Investors" },
+                { href: "/mentor/find-advisors", icon: Handshake, label: "Find Advisors" },
                 ...commonItems
             ]
         }
