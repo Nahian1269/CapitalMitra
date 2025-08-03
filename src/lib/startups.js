@@ -1,0 +1,170 @@
+
+export const startups = [
+    {
+        id: "99-meal",
+        timestamp: "8/2/2025 1:16:39",
+        name: "99 Meal",
+        sector: "Health Food Restaurant",
+        industry: "Food & Beverage",
+        location: {
+            city: "Sylhet",
+            country: "Bangladesh"
+        },
+        overview: "99Meal is a Sylhet-based SME operating as a cloud kitchen that offers affordable, hygienic, and locally popular meals such as beef/chicken kacchi and combo biryani platters. Strategically located near the university area, it targets students and budget-conscious consumers with attractive pricing—often starting from BDT 99—and leverages Facebook for marketing, customer engagement, and daily menu updates. With a strong emphasis on timely delivery, consistent quality, and seasonal or religious offers (like Jummah specials and Iftar platters), 99Meal reflects the growing trend of digital-first food startups in Bangladesh. Despite its small scale, it demonstrates how local SMEs can thrive by combining social media promotion, smart pricing strategies, and personalized service in a focused geographic market.",
+        stage: "Growth Stage",
+        fundingGoal: 1000000,
+        fundingRaised: 0,
+        documents: [
+            "Pitch Deck",
+            "Business Registration Certificate",
+            "TIN & VAT Registration",
+            "Article of Association",
+            "Memorandum",
+            "Financial Report"
+        ],
+        pitchDeckUrl: "https://drive.google.com/file/d/17sdZMetXFMV5Dx9C-mTKM3thU7XtgK8Z/view?usp=sharing",
+        logoUrl: "https://placehold.co/128x128.png",
+        website: "https://99meal.com",
+        foundedYear: 2023,
+        businessType: "Cloud Kitchen",
+        productType: "Food Service",
+        annualRevenue: 1200000,
+        monthlyRecurringRevenue: 100000,
+        employeeCount: 5,
+        socials: {
+            facebook: "https://facebook.com/99meal",
+            linkedin: null,
+            youtube: null,
+            twitter: null
+        },
+        verified: true,
+        team: [{ name: "Fahim Ahmed", designation: "Founder & CEO", about: "Passionate about food and technology."}],
+        videoPitchUrl: null,
+    },
+    {
+        id: "nashwans-cake",
+        timestamp: "8/2/2025 1:28:56",
+        name: "Nashwan's Cake",
+        sector: "Cake Shop and Dessert Shop",
+        industry: "Food & Beverage",
+        location: {
+            city: "Sylhet",
+            country: "Bangladesh"
+        },
+        overview: "Nashwan's Cake is a Sylhet-based online cake and dessert shop that specializes in crafting delicious, visually stunning confections for all occasions. Operating entirely online, the Startup caters to customers looking for custom cakes and a variety of sweet treats made with high-quality ingredients and a personal touch. From birthdays and weddings to casual celebrations, their handcrafted desserts are known for their attention to detail, taste, and aesthetic appeal. Leveraging Facebook as its primary platform, the business showcases its creations, takes orders, and engages directly with customers—making the process smooth and accessible for Sylhet residents. With a growing base of loyal clients, the shop has positioned itself as a reliable and creative choice for dessert lovers seeking both flavor and elegance in their orders. Through consistent quality, timely delivery, and a friendly online presence, this SME continues to sweeten moments and celebrate life’s milestones in Sylhet.",
+        stage: "Growth Stage",
+        fundingGoal: 300000,
+        fundingRaised: 100000,
+        documents: [
+            "Pitch Deck",
+            "Business Registration Certificate",
+            "TIN & VAT Registration",
+            "Article of Association",
+            "Memorandum",
+            "Financial Report"
+        ],
+        pitchDeckUrl: "https://drive.google.com/open?id=19SEPhD3KCmECgMMywMfu-5Jo5pDPJtls",
+        logoUrl: "https://placehold.co/128x128.png",
+        website: "https://nashwanscake.com",
+        foundedYear: 2022,
+        businessType: "E-commerce",
+        productType: "Desserts & Bakery",
+        annualRevenue: 800000,
+        monthlyRecurringRevenue: 70000,
+        employeeCount: 3,
+        socials: {
+            facebook: "https://facebook.com/nashwanscake",
+            linkedin: null,
+            youtube: null,
+            twitter: null
+        },
+        verified: true,
+        team: [{ name: "Nashwan Ahmed", designation: "Founder & Baker", about: "Expert baker with a flair for design."}],
+        videoPitchUrl: null,
+    },
+    {
+        id: "hessle-to-henshel",
+        timestamp: "8/2/2025 1:34:01",
+        name: "Hessle to Henshel",
+        sector: "Restaurant",
+        industry: "Food & Beverage",
+        location: {
+            city: "Sylhet",
+            country: "Bangladesh"
+        },
+        overview: "Hassle to Henshel is a Sylhet-based food startup providing fresh, homestyle lunch and dinner at affordable prices for students and working individuals tired of typical mess food. Located in Khuliapara, the venture focuses on delivering clean, quality meals that feel like home-cooked food. With a tagline “Tired of mess food?”, it addresses a common local need for reliable daily meals. By prioritizing hygiene, taste, and affordability, Hassle to Henshel is quickly gaining attention as a practical and satisfying alternative to both expensive restaurants and subpar mess options in Sylhet.",
+        stage: "Growth Stage",
+        fundingGoal: 1000000,
+        fundingRaised: 0,
+        documents: [
+            "Pitch Deck",
+            "Business Registration Certificate",
+            "TIN & VAT Registration",
+            "Article of Association",
+            "Memorandum",
+            "Financial Report"
+        ],
+        pitchDeckUrl: "https://drive.google.com/open?id=1_oEE0W9dSQQZM6kELK-0l2PG6P6qwn97",
+        logoUrl: "https://placehold.co/128x128.png",
+        website: "https://hessletohenshel.com",
+        foundedYear: 2024,
+        businessType: "Food Delivery",
+        productType: "Meal Service",
+        annualRevenue: 500000,
+        monthlyRecurringRevenue: 40000,
+        employeeCount: 4,
+        socials: {
+            facebook: "https://facebook.com/hessletohenshel",
+            linkedin: null,
+            youtube: null,
+            twitter: null
+        },
+        verified: false,
+        team: [{ name: "Rahim Chowdhury", designation: "Founder", about: "Solving the daily meal problem for students."}],
+        videoPitchUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Example video
+    },
+    {
+        id: "khushbuwala",
+        timestamp: "8/2/2025 1:38:14",
+        name: "Khushbuwala",
+        sector: "Business",
+        industry: "Retail & E-commerce",
+        location: {
+            city: "Sylhet",
+            country: "Bangladesh"
+        },
+        overview: "Khushbuwala is a Sylhet-based small business offering a curated selection of premium fragrances and organic lifestyle products. Their Facebook page highlights enticing combo packs of five naturally long-lasting attar oils, emphasizing visual appeal and signature scents designed to elevate your individuality. In addition to perfumes, they feature items across categories such as healthy pantry staples, premium teas, organic foods, Islamic literature, and accessories—all accessible through their online store. The brand emphasizes quality, sustainability, and a seamless shopping experience for customers in Bangladesh and beyond.",
+        stage: "Mature Stage",
+        fundingGoal: 1000000,
+        fundingRaised: 500000,
+        documents: [
+            "Pitch Deck",
+            "Business Registration Certificate",
+            "TIN & VAT Registration",
+            "Article of Association",
+            "Memorandum",
+            "Financial Report",
+            "Intellectual Property Doc.",
+            "Insurance Paper",
+            "License"
+        ],
+        pitchDeckUrl: "https://drive.google.com/open?id=1obZDqqtS58Ic189coNaGz_y91_2XY9_g",
+        logoUrl: "https://placehold.co/128x128.png",
+        website: "https://khushbuwala.com",
+        foundedYear: 2021,
+        businessType: "E-commerce",
+        productType: "Lifestyle & Fragrance",
+        annualRevenue: 3000000,
+        monthlyRecurringRevenue: 250000,
+        employeeCount: 8,
+        socials: {
+            facebook: "https://facebook.com/khushbuwala",
+            linkedin: "https://linkedin.com/company/khushbuwala",
+            youtube: "https://youtube.com/khushbuwala",
+            twitter: "https://twitter.com/khushbuwala"
+        },
+        verified: true,
+        team: [{ name: "Ayesha Khan", designation: "Founder & CEO", about: "Curating the finest organic products."}],
+        videoPitchUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Example video
+    }
+];

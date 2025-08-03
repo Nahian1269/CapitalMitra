@@ -1,3 +1,4 @@
+
 "use client";
 
 import Link from "next/link";
@@ -11,6 +12,7 @@ import {
   User,
   LogOut,
   Target,
+  Rocket
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -24,13 +26,18 @@ import React from "react";
 
 export function DashboardLayout({ children, userType }) {
     const getNavItems = () => {
+        const commonItems = [
+            { href: "/explore-startups", icon: Rocket, label: "Explore Startups" },
+            { href: "#", icon: User, label: "Profile" },
+            { href: "#", icon: Settings, label: "Settings" },
+        ];
+
         if(userType === 'client') {
             return [
                 { href: "/client/dashboard", icon: Home, label: "Dashboard" },
                 { href: "/client/find-investors", icon: Briefcase, label: "Find Investors" },
                 { href: "/client/find-mentors", icon: Users, label: "Find Mentors" },
-                { href: "#", icon: User, label: "Profile" },
-                { href: "#", icon: Settings, label: "Settings" },
+                ...commonItems
             ]
         }
         if(userType === 'investor') {
@@ -38,16 +45,15 @@ export function DashboardLayout({ children, userType }) {
                 { href: "/investor/dashboard", icon: Home, label: "Dashboard" },
                 { href: "/investor/find-clients", icon: Target, label: "Find Clients" },
                 { href: "/investor/find-mentors", icon: Users, label: "Find Mentors" },
-                { href: "#", icon: User, label: "Profile" },
-                { href: "#", icon: Settings, label: "Settings" },
+                ...commonItems
             ]
         }
+        // Mentor
         return [
             { href: "/mentor/dashboard", icon: Home, label: "Dashboard" },
             { href: "/mentor/find-clients", icon: Target, label: "Find Clients" },
             { href: "/mentor/find-investors", icon: Briefcase, label: "Find Investors" },
-            { href: "#", icon: User, label: "Profile" },
-            { href: "#", icon: Settings, label: "Settings" },
+            ...commonItems
         ]
     }
     
@@ -113,7 +119,7 @@ export function DashboardLayout({ children, userType }) {
             </Link>
         </Button>
         </header>
-        <main className="flex-1 p-4 sm:p-6 md:p-8">
+        <main className="flex-1 p-4 sm:p-6 md:p-8 bg-gray-50 dark:bg-gray-900">
             {children}
         </main>
       </div>
