@@ -13,6 +13,7 @@ import {
   Target,
   Rocket,
   Handshake,
+  UserCheck,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -43,7 +44,7 @@ export function DashboardLayout({ children, userType }) {
         if(userType === 'investor') {
             return [
                 { href: "/investor/dashboard", icon: Home, label: "Dashboard" },
-                { href: "/investor/find-clients", icon: Target, label: "Find Clients" },
+                { href: "/investor/find-clients", icon: Target, label: "Find Startups" },
                 { href: "/investor/find-mentors", icon: Users, label: "Find Mentors" },
                 ...commonItems
             ]
@@ -51,7 +52,7 @@ export function DashboardLayout({ children, userType }) {
         if(userType === 'mentor') {
             return [
                 { href: "/mentor/dashboard", icon: Home, label: "Dashboard" },
-                { href: "/mentor/find-clients", icon: Target, label: "Find Clients" },
+                { href: "/mentor/find-clients", icon: Target, label: "Find Startups" },
                 { href: "/mentor/find-investors", icon: Briefcase, label: "Find Investors" },
                 ...commonItems
             ]
