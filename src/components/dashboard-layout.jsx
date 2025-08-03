@@ -1,4 +1,3 @@
-
 "use client";
 
 import Link from "next/link";
@@ -12,7 +11,8 @@ import {
   User,
   LogOut,
   Target,
-  Rocket
+  Rocket,
+  Handshake,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -48,13 +48,25 @@ export function DashboardLayout({ children, userType }) {
                 ...commonItems
             ]
         }
-        // Mentor
-        return [
-            { href: "/mentor/dashboard", icon: Home, label: "Dashboard" },
-            { href: "/mentor/find-clients", icon: Target, label: "Find Clients" },
-            { href: "/mentor/find-investors", icon: Briefcase, label: "Find Investors" },
-            ...commonItems
-        ]
+        if(userType === 'mentor') {
+            return [
+                { href: "/mentor/dashboard", icon: Home, label: "Dashboard" },
+                { href: "/mentor/find-clients", icon: Target, label: "Find Clients" },
+                { href: "/mentor/find-investors", icon: Briefcase, label: "Find Investors" },
+                ...commonItems
+            ]
+        }
+        if(userType === 'financial-advisor') {
+            return [
+                { href: "/financial-advisor/dashboard", icon: Home, label: "Dashboard" },
+                { href: "/financial-advisor/find-clients", icon: Target, label: "Find Clients" },
+                { href: "/financial-advisor/find-investors", icon: Briefcase, label: "Find Investors" },
+                { href: "/financial-advisor/find-mentors", icon: Users, label: "Find Mentors" },
+                ...commonItems
+            ]
+        }
+        // Default
+        return commonItems;
     }
     
   return (

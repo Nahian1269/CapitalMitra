@@ -2,7 +2,7 @@ import Link from "next/link";
 import { AuthLayout } from "@/components/auth-layout";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Briefcase, Target, Users, ArrowRight } from "lucide-react";
+import { Briefcase, Target, Users, ArrowRight, Handshake } from "lucide-react";
 
 export default function LoginSelector() {
   const roles = [
@@ -23,6 +23,12 @@ export default function LoginSelector() {
       description: "I want to share my expertise and guide entrepreneurs.",
       icon: <Users className="h-8 w-8 text-primary" />,
       href: "/login/mentor",
+    },
+    {
+      name: "Financial Advisor",
+      description: "I provide financial advice and portfolio management.",
+      icon: <Handshake className="h-8 w-8 text-primary" />,
+      href: "/login/financial-advisor",
     },
   ];
 
