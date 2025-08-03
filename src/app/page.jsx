@@ -41,7 +41,7 @@ export default function Home() {
                 </div>
               </div>
               <Image
-                src="https://placehold.co/650x450.png"
+                src="/images.jpeg"
                 width="650"
                 height="450"
                 alt="Hero"
