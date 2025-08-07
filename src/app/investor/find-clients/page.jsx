@@ -10,24 +10,24 @@ import { Input } from "@/components/ui/input";
 
 const clients = [
     {
-        fullName: "John Doe",
-        avatarUrl: "https://placehold.co/80x80.png",
+        fullName: "Fahim Hafiz",
+        avatarUrl: "/asd.jpg",
         company: "Tech Innovators Inc.",
         stage: "Seed",
         fundingGoal: 500000,
         summary: "AI-powered learning platform revolutionizing the ed-tech space. Looking for seed funding to scale our MVP and expand our user base.",
     },
     {
-        fullName: "Alex Ray",
-        avatarUrl: "https://placehold.co/80x80.png",
+        fullName: "Rahim Shikder ",
+        avatarUrl: "/asd.jpg",
         company: "Healthify",
         stage: "Pre-seed",
         fundingGoal: 150000,
         summary: "A mobile app that connects users with personalized nutrition plans and fitness coaches. Seeking pre-seed capital for product development.",
     },
     {
-        fullName: "Samantha Lee",
-        avatarUrl: "https://placehold.co/80x80.png",
+        fullName: "Samantha",
+        avatarUrl: "/asd.jpg",
         company: "EcoGoods",
         stage: "Series A",
         fundingGoal: 2000000,

@@ -19,8 +19,8 @@ export default function FinancialAdvisorDashboard() {
     affiliatedOrganization: "WealthBridge Advisors",
     specializations: ["Investment Management", "Retirement Planning", "Wealth Strategy", "Tax Planning"],
     clientTestimonials: [
-        { name: "John Doe, Founder of Tech Innovators", quote: "Alex's guidance was crucial during our seed round." },
-        { name: "Jane Smith, Angel Investor", quote: "A trustworthy and knowledgeable advisor." },
+        { name: "Rashed Ali , Founder of Tech Innovators", quote: "Alex's guidance was crucial during our seed round." },
+        { name: "Fahim Hafiz, Angel Investor", quote: "A trustworthy and knowledgeable advisor." },
     ],
     feeStructure: "1% AUM + Hourly Consulting"
   };

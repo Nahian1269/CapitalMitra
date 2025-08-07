@@ -100,7 +100,7 @@ export default function Home() {
                       <blockquote className="text-lg italic text-foreground/80 flex-grow">"CapitalMitra connected me with an investor who not only funded my startup but also became a key mentor. It's more than just a platform; it's a community."</blockquote>
                       <div className="flex items-center gap-4 pt-6 mt-6 border-t">
                         <Avatar className="h-12 w-12">
-                           <AvatarImage src="https://placehold.co/48x48.png" data-ai-hint="woman portrait" />
+                           <AvatarImage src="/asd.jpg" data-ai-hint="woman portrait" />
                            <AvatarFallback>FA</AvatarFallback>
                         </Avatar>
                         <div>
@@ -118,7 +118,7 @@ export default function Home() {
                         <blockquote className="text-lg italic text-foreground/80 flex-grow">"As an investor, the quality of projects on CapitalMitra is outstanding. I've diversified my portfolio with ventures I truly believe in."</blockquote>
                       <div className="flex items-center gap-4 pt-6 mt-6 border-t">
                         <Avatar className="h-12 w-12">
-                           <AvatarImage src="https://placehold.co/48x48.png" data-ai-hint="man portrait" />
+                           <AvatarImage src="/asd.jpg" data-ai-hint="man portrait" />
                            <AvatarFallback>RK</AvatarFallback>
                         </Avatar>
                         <div>
@@ -136,7 +136,7 @@ export default function Home() {
                         <blockquote className="text-lg italic text-foreground/80 flex-grow">"Mentoring on this platform has been incredibly rewarding. It's fulfilling to share my experience and see new businesses thrive."</blockquote>
                       <div className="flex items-center gap-4 pt-6 mt-6 border-t">
                         <Avatar className="h-12 w-12">
-                           <AvatarImage src="https://placehold.co/48x48.png" data-ai-hint="woman professional" />
+                           <AvatarImage src="/asd.jpg" data-ai-hint="woman professional" />
                            <AvatarFallback>SC</AvatarFallback>
                         </Avatar>
                         <div>
@@ -154,7 +154,7 @@ export default function Home() {
                         <blockquote className="text-lg italic text-foreground/80 flex-grow">"The insights and connections I've gained here have been invaluable for my clients' portfolios. A must-have tool for financial advisors."</blockquote>
                       <div className="flex items-center gap-4 pt-6 mt-6 border-t">
                         <Avatar className="h-12 w-12">
-                           <AvatarImage src="https://placehold.co/48x48.png" data-ai-hint="man professional" />
+                           <AvatarImage src="/asd.jpg" data-ai-hint="man professional" />
                            <AvatarFallback>AI</AvatarFallback>
                         </Avatar>
                         <div>

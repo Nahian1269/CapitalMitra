@@ -10,8 +10,8 @@ import { DashboardLayout } from "@/components/dashboard-layout";
 
 export default function ClientDashboard() {
   const client = {
-    fullName: "John Doe",
-    email: "john.doe@example.com",
+    fullName: "Rashed Khan",
+    email: "Rashed.doe@example.com",
     phone: "+1 234 567 890",
     company: "Tech Innovators Inc.",
     stage: "Seed",
@@ -29,7 +29,7 @@ export default function ClientDashboard() {
             <CardHeader className="flex flex-row items-start justify-between">
               <div className="flex items-center space-x-4">
                 <Avatar className="h-20 w-20">
-                  <AvatarImage src="https://placehold.co/80x80.png" alt={client.fullName} />
+                  <AvatarImage src="/asd.jpg" alt={client.fullName} />
                   <AvatarFallback>{client.fullName.split(' ').map(n => n[0]).join('')}</AvatarFallback>
                 </Avatar>
                 <div>
@@ -80,11 +80,11 @@ export default function ClientDashboard() {
                     <Card>
                         <CardHeader className="flex-row items-center gap-4">
                              <Avatar>
-                                <AvatarImage src="https://placehold.co/40x40.png" />
+                                <AvatarImage src="/asd.jpg" />
                                <AvatarFallback>JD</AvatarFallback>
                             </Avatar>
                             <div>
-                                <p className="font-semibold">John Doe</p>
+                                <p className="font-semibold">Rashed khan</p>
                                 <p className="text-sm text-muted-foreground">Angel Investor</p>
                             </div>
                         </CardHeader>
@@ -97,11 +97,11 @@ export default function ClientDashboard() {
                      <Card>
                         <CardHeader className="flex-row items-center gap-4">
                              <Avatar>
-                                <AvatarImage src="https://placehold.co/40x40.png" />
+                                <AvatarImage src="/sara.jpg" />
                                <AvatarFallback>SA</AvatarFallback>
                             </Avatar>
                             <div>
-                                <p className="font-semibold">Sarah Adams</p>
+                                <p className="font-semibold">Sarah hasan</p>
                                 <p className="text-sm text-muted-foreground">Industry Mentor</p>
                             </div>
                         </CardHeader>
