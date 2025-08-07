@@ -48,10 +48,6 @@ export default function FindMentorsPage() {
                         {mentor.fieldsOfExpertise.map(expertise => <Badge key={expertise} variant="secondary">{expertise}</Badge>)}
                     </div>
                 </div>
-                <div>
-                    <h4 className="font-semibold text-sm mb-2 flex items-center gap-1"><DollarSign className="h-4 w-4"/>Fee Range (per session)</h4>
-                    <p className="text-sm font-bold">{BDTFormatter.format(mentor.feeRange.min)} - {BDTFormatter.format(mentor.feeRange.max)}</p>
-                </div>
               </CardContent>
               <div className="p-6 pt-0">
                 <Button asChild className="w-full">

@@ -1,11 +1,11 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Briefcase, Target, Users, Quote, CheckCircle, Handshake } from "lucide-react";
+import { ArrowRight, Briefcase, Target, Users, Quote, Handshake } from "lucide-react";
 import React from 'react';
 
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
@@ -16,40 +16,47 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-background">
       <Header />
       <main className="flex-1">
-        <section className="relative w-full overflow-hidden bg-background">
-          <div className="container px-4 md:px-6">
-            <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[calc(100vh-4rem)] py-20">
-              <div className="space-y-6 text-center lg:text-left z-10">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter text-foreground font-headline">
-                  Connect. Fund. <span className="text-primary">Grow.</span>
-                </h1>
-                <p className="max-w-xl mx-auto lg:mx-0 text-muted-foreground md:text-xl">
-                  CapitalMitra is the premier ecosystem where ambitious founders, strategic investors, and expert mentors unite to build the future.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                  <Button asChild size="lg" className="shadow-lg hover:shadow-primary/50 transition-shadow">
+        <section className="w-full py-20 md:py-32 lg:py-40 relative">
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent"></div>
+           <Image
+              src="https://placehold.co/1920x1080.png"
+              layout="fill"
+              objectFit="cover"
+              alt="Professional business meeting"
+              data-ai-hint="professional business meeting"
+              className="opacity-5"
+            />
+          <div className="container px-4 md:px-6 relative z-10">
+            <div className="grid gap-10 lg:grid-cols-2 lg:gap-12">
+              <div className="flex flex-col justify-center space-y-6">
+                <div className="space-y-4">
+                  <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none font-headline text-primary">
+                    Where Vision Meets Capital
+                  </h1>
+                  <p className="max-w-[600px] text-muted-foreground md:text-xl font-body">
+                    CapitalMitra is the premier platform connecting ambitious founders with strategic investors and expert mentors to build the future of business.
+                  </p>
+                </div>
+                <div className="flex flex-col gap-2 min-[400px]:flex-row">
+                  <Button asChild size="lg">
                     <Link href="/login-selector">
-                      Join The Ecosystem
+                      Get Started
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </Link>
                   </Button>
                   <Button asChild size="lg" variant="outline">
-                    <Link href="#features">
-                      Explore Features
-                    </Link>
+                    <Link href="#how-it-works">Learn More</Link>
                   </Button>
                 </div>
               </div>
-              <div className="relative h-full hidden lg:block">
-                <div className="absolute inset-0 bg-gradient-to-tr from-primary/30 to-accent/30 rounded-full blur-3xl animate-pulse-slow"></div>
-                <Image
-                  src="/xyz.jpg"
-                  alt="Business Growth"
-                  width={600}
-                  height={600}
-                  className="relative z-10 rounded-full object-cover shadow-2xl"
-                  data-ai-hint="business growth chart"
-                  priority
+              <div className="hidden lg:flex items-center justify-center">
+                 <Image
+                  src="https://placehold.co/600x400.png"
+                  width="600"
+                  height="400"
+                  alt="Hero"
+                  data-ai-hint="collaboration business"
+                  className="mx-auto aspect-video overflow-hidden rounded-xl object-cover shadow-2xl"
                 />
               </div>
             </div>
@@ -116,11 +123,11 @@ export default function Home() {
                       <div className="flex items-center gap-4 pt-4 border-t">
                         <Avatar>
                            <AvatarImage src="https://placehold.co/40x40.png" data-ai-hint="woman portrait" />
-                           <AvatarFallback>JC</AvatarFallback>
+                           <AvatarFallback>FA</AvatarFallback>
                         </Avatar>
                         <div>
-                          <p className="font-semibold">Jane Cooper</p>
-                          <p className="text-sm text-muted-foreground">Founder, Tech Innovators</p>
+                          <p className="font-semibold">Fatima Ahmed</p>
+                          <p className="text-sm text-muted-foreground">Founder, Sobji Arat</p>
                         </div>
                       </div>
                     </CardContent>
@@ -136,10 +143,10 @@ export default function Home() {
                       <div className="flex items-center gap-4 pt-4 border-t">
                         <Avatar>
                            <AvatarImage src="https://placehold.co/40x40.png" data-ai-hint="man portrait" />
-                           <AvatarFallback>JD</AvatarFallback>
+                           <AvatarFallback>RK</AvatarFallback>
                         </Avatar>
                         <div>
-                          <p className="font-semibold">John Doe</p>
+                          <p className="font-semibold">Rahim Khan</p>
                           <p className="text-sm text-muted-foreground">Angel Investor</p>
                         </div>
                       </div>
@@ -156,10 +163,10 @@ export default function Home() {
                       <div className="flex items-center gap-4 pt-4 border-t">
                         <Avatar>
                            <AvatarImage src="https://placehold.co/40x40.png" data-ai-hint="woman professional" />
-                           <AvatarFallback>SA</AvatarFallback>
+                           <AvatarFallback>SC</AvatarFallback>
                         </Avatar>
                         <div>
-                          <p className="font-semibold">Sarah Adams</p>
+                          <p className="font-semibold">Sadia Chowdhury</p>
                           <p className="text-sm text-muted-foreground">Industry Mentor</p>
                         </div>
                       </div>
@@ -185,8 +192,8 @@ const FeatureCard = ({ icon, title, description }) => (
                 {React.cloneElement(icon, { className: "h-8 w-8" })}
             </div>
         </div>
-        <CardTitle className="font-headline text-lg mb-2">{title}</CardTitle>
-        <CardDescription>{description}</CardDescription>
+        <h3 className="font-headline text-lg mb-2 font-semibold">{title}</h3>
+        <p className="text-sm text-muted-foreground">{description}</p>
     </Card>
 )
 

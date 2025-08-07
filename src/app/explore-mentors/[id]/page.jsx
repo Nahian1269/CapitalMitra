@@ -63,10 +63,6 @@ export default function MentorProfilePage({ params }) {
                   {mentor.fieldsOfExpertise.map(expertise => <Badge key={expertise} variant="secondary">{expertise}</Badge>)}
                 </div>
               </div>
-              <div>
-                <h3 className="text-lg font-semibold flex items-center gap-2 mb-4"><DollarSign className="h-5 w-5 text-primary"/> Fee Range (per session)</h3>
-                <p className="text-2xl font-bold">{BDTFormatter.format(mentor.feeRange.min)} - {BDTFormatter.format(mentor.feeRange.max)}</p>
-              </div>
               {mentor.startupsWorkedWith.length > 0 && (
                  <div>
                     <h3 className="text-lg font-semibold flex items-center gap-2 mb-4"><Rocket className="h-5 w-5 text-primary"/> Startups Worked With</h3>
