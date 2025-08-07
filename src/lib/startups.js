@@ -13,7 +13,7 @@ export const startups = [
         overview: "99Meal is a Sylhet-based SME operating as a cloud kitchen that offers affordable, hygienic, and locally popular meals such as beef/chicken kacchi and combo biryani platters. Strategically located near the university area, it targets students and budget-conscious consumers with attractive pricing—often starting from BDT 99—and leverages Facebook for marketing, customer engagement, and daily menu updates. With a strong emphasis on timely delivery, consistent quality, and seasonal or religious offers (like Jummah specials and Iftar platters), 99Meal reflects the growing trend of digital-first food startups in Bangladesh. Despite its small scale, it demonstrates how local SMEs can thrive by combining social media promotion, smart pricing strategies, and personalized service in a focused geographic market.",
         stage: "Growth Stage",
         fundingGoal: 1000000,
-        fundingRaised: 0,
+        fundingRaised: 500000,
         documents: [
             "Pitch Deck",
             "Business Registration Certificate",
@@ -166,5 +166,45 @@ export const startups = [
         verified: true,
         team: [{ name: "Ayesha Khan", designation: "Founder & CEO", about: "Curating the finest organic products."}],
         videoPitchUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Example video
+    },
+    {
+        id: "nutrivana",
+        timestamp: "8/3/2025 10:00:00",
+        name: "Nutrivana",
+        sector: "Food",
+        industry: "Food & Beverage",
+        location: {
+            city: "Dhaka",
+            country: "Bangladesh"
+        },
+        overview: "Nutrivana Works for reducing the protine deficiency, malnutrition, and consuming unhealthhy snacks of School going students in Bangladesh.",
+        stage: "Infant Stage",
+        fundingGoal: 500000,
+        fundingRaised: 60000,
+        documents: [
+            "Pitch Deck",
+            "Business Registration Certificate",
+            "TIN & VAT Registration",
+            "BSTI Licence",
+            "Financial Report"
+        ],
+        pitchDeckUrl: "https://drive.google.com/open?id=1X5mW9UILViv4y_Nmrlv5BbJe6zidCegd",
+        logoUrl: "https://placehold.co/128x128.png",
+        website: "https://nutrivana.com",
+        foundedYear: 2024,
+        businessType: "Food Product",
+        productType: "Healthy Snacks",
+        annualRevenue: 0,
+        monthlyRecurringRevenue: 0,
+        employeeCount: 2,
+        socials: {
+            facebook: null,
+            linkedin: null,
+            youtube: null,
+            twitter: null
+        },
+        verified: false,
+        team: [{ name: "Startup Founder", designation: "CEO", about: "Dedicated to improving nutrition for students."}],
+        videoPitchUrl: null,
     }
 ];
