@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Briefcase, Target, Users, Quote, CheckCircle, Handshake } from "lucide-react";
@@ -15,50 +16,41 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-background">
       <Header />
       <main className="flex-1">
-        <section className="w-full py-20 md:py-32 lg:py-40 relative">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent"></div>
-            <Image
-                src="https://placehold.co/1920x1080.png"
-                layout="fill"
-                objectFit="cover"
-                alt="Professional business meeting"
-                data-ai-hint="professional business meeting"
-                className="opacity-5"
-            />
-          <div className="container px-4 md:px-6 relative z-10">
-            <div className="grid gap-10 lg:grid-cols-2 lg:gap-12">
-              <div className="flex flex-col justify-center space-y-6">
-                <div className="space-y-4">
-                  <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none font-headline text-primary">
-                    Where Vision Meets Capital
-                  </h1>
-                  <p className="max-w-[600px] text-muted-foreground md:text-xl font-body">
-                    CapitalMitra is the premier platform connecting ambitious founders with strategic investors and expert mentors to build the future of business.
-                  </p>
-                </div>
-                <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Button asChild size="lg">
+        <section className="relative w-full overflow-hidden bg-background">
+          <div className="container px-4 md:px-6">
+            <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[calc(100vh-4rem)] py-20">
+              <div className="space-y-6 text-center lg:text-left z-10">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter text-foreground font-headline">
+                  Connect. Fund. <span className="text-primary">Grow.</span>
+                </h1>
+                <p className="max-w-xl mx-auto lg:mx-0 text-muted-foreground md:text-xl">
+                  CapitalMitra is the premier ecosystem where ambitious founders, strategic investors, and expert mentors unite to build the future.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                  <Button asChild size="lg" className="shadow-lg hover:shadow-primary/50 transition-shadow">
                     <Link href="/login-selector">
-                      Get Started
+                      Join The Ecosystem
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </Link>
                   </Button>
                   <Button asChild size="lg" variant="outline">
-                    <Link href="#how-it-works">
-                      Learn More
+                    <Link href="#features">
+                      Explore Features
                     </Link>
                   </Button>
                 </div>
               </div>
-              <div className="hidden lg:flex items-center justify-center">
-                 <Image
-                    src="https://placehold.co/600x400.png"
-                    width="600"
-                    height="400"
-                    alt="Hero"
-                    data-ai-hint="collaboration business"
-                    className="mx-auto aspect-video overflow-hidden rounded-xl object-cover shadow-2xl"
-                  />
+              <div className="relative h-full hidden lg:block">
+                <div className="absolute inset-0 bg-gradient-to-tr from-primary/30 to-accent/30 rounded-full blur-3xl animate-pulse-slow"></div>
+                <Image
+                  src="https://placehold.co/600/600.png"
+                  alt="Business Growth"
+                  width={600}
+                  height={600}
+                  className="relative z-10 rounded-full object-cover shadow-2xl"
+                  data-ai-hint="business growth chart"
+                  priority
+                />
               </div>
             </div>
           </div>
@@ -189,7 +181,7 @@ export default function Home() {
 const FeatureCard = ({ icon, title, description }) => (
     <Card className="text-center p-6 transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
         <div className="flex justify-center mb-4">
-            <div className="p-4 bg-accent/10 rounded-full text-accent">
+            <div className="p-4 bg-primary/10 rounded-full text-primary">
                 {React.cloneElement(icon, { className: "h-8 w-8" })}
             </div>
         </div>
