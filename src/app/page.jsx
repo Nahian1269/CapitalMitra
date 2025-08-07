@@ -34,7 +34,7 @@ export default function Home() {
         <section className="relative w-full h-[80vh] overflow-hidden flex items-center justify-center">
             <div className="absolute inset-0 grid grid-cols-4 md:grid-cols-6 -skew-y-12 scale-150 gap-2 md:gap-4 p-4 opacity-30">
                 {profiles.map((p, i) => (
-                    <div key={i} className="rounded-2xl overflow-hidden shadow-lg">
+                    <div key={i} className="rounded-2xl overflow-hidden shadow-lg animate-pulse-slow">
                         <Image
                             src={p.src}
                             width={300}
