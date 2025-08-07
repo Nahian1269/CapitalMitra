@@ -3,7 +3,7 @@ export const advisors = [
     {
         id: "shahriar-ahmed",
         fullName: "Shahriar Ahmed",
-        avatarUrl: "https://placehold.co/80x80.png",
+        avatarUrl: "/FA/Sabbir.jpeg",
         designation: "Banker, IFIC Bank",
         about: "With years of experience in the banking sector, I bring a deep understanding of finance and investment trends. I am passionate about supporting innovative ideas and helping businesses specially the investors by advising them exactly where to invest and reach their full potential.",
         country: "Bangladesh",
@@ -20,7 +20,7 @@ export const advisors = [
     {
         id: "tamim-ahmed-chowdhury",
         fullName: "Tamim Ahmed Chowdhury",
-        avatarUrl: "https://placehold.co/80x80.png",
+        avatarUrl: "/FA/xyz.jpeg",
         designation: "Banker, Premier Bank",
         about: "My background in banking has sharpened my skills in analyzing opportunities and navigating complex financial landscapes. I’m driven by a commitment to foster growth and create lasting value.",
         country: "Bangladesh",
@@ -37,7 +37,7 @@ export const advisors = [
     {
         id: "al-amen-bhuiya",
         fullName: "Al Amen Bhuiya",
-        avatarUrl: "https://placehold.co/80x80.png",
+        avatarUrl: "/FA/abc.jpeg",
         designation: "Graduate and BCS Cadre",
         about: "As a graduate and BCS cadre, I combine analytical thinking with practical insight to support promising ventures. I believe in empowering businesses through smart guidance and strategic foresight.",
         country: "Bangladesh",

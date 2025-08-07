@@ -43,7 +43,7 @@ export default function Home() {
               <div className="relative h-full hidden lg:block">
                 <div className="absolute inset-0 bg-gradient-to-tr from-primary/30 to-accent/30 rounded-full blur-3xl animate-pulse-slow"></div>
                 <Image
-                  src="https://placehold.co/600/600.png"
+                  src="/xyz.jpg"
                   alt="Business Growth"
                   width={600}
                   height={600}

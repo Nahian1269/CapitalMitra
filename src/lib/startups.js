@@ -23,7 +23,7 @@ export const startups = [
             "Financial Report"
         ],
         pitchDeckUrl: "https://drive.google.com/file/d/17sdZMetXFMV5Dx9C-mTKM3thU7XtgK8Z/view?usp=sharing",
-        logoUrl: "https://placehold.co/128x128.png",
+        logoUrl: "/99meals.jpg",
         website: "https://99meal.com",
         foundedYear: 2023,
         businessType: "Cloud Kitchen",
@@ -64,7 +64,7 @@ export const startups = [
             "Financial Report"
         ],
         pitchDeckUrl: "https://drive.google.com/open?id=19SEPhD3KCmECgMMywMfu-5Jo5pDPJtls",
-        logoUrl: "https://placehold.co/128x128.png",
+        logoUrl: "/cake.jpg",
         website: "https://nashwanscake.com",
         foundedYear: 2022,
         businessType: "E-commerce",
@@ -105,7 +105,7 @@ export const startups = [
             "Financial Report"
         ],
         pitchDeckUrl: "https://drive.google.com/open?id=1_oEE0W9dSQQZM6kELK-0l2PG6P6qwn97",
-        logoUrl: "https://placehold.co/128x128.png",
+        logoUrl: "/Henshel.jpg",
         website: "https://hessletohenshel.com",
         foundedYear: 2024,
         businessType: "Food Delivery",
@@ -149,7 +149,7 @@ export const startups = [
             "License"
         ],
         pitchDeckUrl: "https://drive.google.com/open?id=1obZDqqtS58Ic189coNaGz_y91_2XY9_g",
-        logoUrl: "https://placehold.co/128x128.png",
+        logoUrl: "/khusbuwala.jpg",
         website: "https://khushbuwala.com",
         foundedYear: 2021,
         businessType: "E-commerce",
@@ -188,8 +188,8 @@ export const startups = [
             "BSTI Licence",
             "Financial Report"
         ],
-        pitchDeckUrl: "https://drive.google.com/open?id=1X5mW9UILViv4y_Nmrlv5BbJe6zidCegd",
-        logoUrl: "https://placehold.co/128x128.png",
+        pitchDeckUrl:"https://drive.google.com/file/d/1YJ-FyqsteJa2bbUVKruQSId5tpH_tgTN/view",
+        logoUrl: "/nutrivana.png",
         website: "https://nutrivana.com",
         foundedYear: 2024,
         businessType: "Food Product",
@@ -205,6 +205,6 @@ export const startups = [
         },
         verified: false,
         team: [{ name: "Startup Founder", designation: "CEO", about: "Dedicated to improving nutrition for students."}],
-        videoPitchUrl: null,
+        videoPitchUrl:"https://drive.google.com/file/d/1YJ-FyqsteJa2bbUVKruQSId5tpH_tgTN/view",
     }
 ];
