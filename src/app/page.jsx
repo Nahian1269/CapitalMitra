@@ -11,45 +11,24 @@ import { Footer } from "@/components/footer";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
-const profiles = [
-    { src: 'https://placehold.co/300x500.png', name: 'Rashi', hint: 'woman smiling' },
-    { src: 'https://placehold.co/300x500.png', name: 'Apoorva', hint: 'woman posing' },
-    { src: 'https://placehold.co/300x500.png', name: 'Prachi', hint: 'woman outdoors' },
-    { src: 'https://placehold.co/300x500.png', name: 'Aditya', hint: 'man smiling' },
-    { src: 'https://placehold.co/300x500.png', name: 'Sana', hint: 'woman fashion' },
-    { src: 'https://placehold.co/300x500.png', name: 'Shruti', hint: 'woman happy' },
-    { src: 'https://placehold.co/300x500.png', name: 'Eshna', hint: 'woman glasses' },
-    { src: 'https://placehold.co/300x500.png', name: 'Rahul', hint: 'man casual' },
-    { src: 'https://placehold.co/300x500.png', name: 'Priya', hint: 'woman portrait' },
-    { src: 'https://placehold.co/300x500.png', name: 'Vikram', hint: 'man outdoors' },
-    { src: 'https://placehold.co/300x500.png', name: 'Neha', hint: 'woman night' },
-    { src: 'https://placehold.co/300x500.png', name: 'Amit', hint: 'man professional' },
-]
-
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-background">
       <Header />
       <main className="flex-1">
         <section className="relative w-full h-[80vh] overflow-hidden flex items-center justify-center">
-            <div className="absolute inset-0 grid grid-cols-4 md:grid-cols-6 -skew-y-12 scale-150 gap-2 md:gap-4 p-4 opacity-30">
-                {profiles.map((p, i) => (
-                    <div key={i} className="rounded-2xl overflow-hidden shadow-lg animate-pulse-slow">
-                        <Image
-                            src={p.src}
-                            width={300}
-                            height={500}
-                            alt={p.name}
-                            data-ai-hint={p.hint}
-                            className="w-full h-full object-cover"
-                        />
-                    </div>
-                ))}
-            </div>
-            <div className="absolute inset-0 bg-black/50"></div>
+            <Image
+                src="/stock.jpg"
+                layout="fill"
+                objectFit="cover"
+                alt="Business meeting"
+                className="absolute inset-0 z-0"
+                data-ai-hint="background business"
+            />
+            <div className="absolute inset-0 bg-black/60"></div>
             <div className="relative z-10 text-center text-white px-4">
                 <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tighter drop-shadow-lg">
-                    Start Something Epic.
+                Where Businesses Rise and Investors Grow .
                 </h1>
                 <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-neutral-200 drop-shadow-md">
                    CapitalMitra is the premier platform connecting ambitious founders with strategic investors and expert mentors to build the future of business.
@@ -115,19 +94,17 @@ export default function Home() {
             >
               <CarouselContent>
                 <CarouselItem className="md:basis-1/2 p-4">
-                  <Card className="h-full">
-                    <CardContent className="p-6 flex flex-col justify-between h-full">
-                      <div>
-                        <Quote className="w-8 h-8 text-accent mb-4" />
-                        <p className="mb-4">"CapitalMitra connected me with an investor who not only funded my startup but also became a key mentor. It's more than just a platform; it's a community."</p>
-                      </div>
-                      <div className="flex items-center gap-4 pt-4 border-t">
-                        <Avatar>
-                           <AvatarImage src="https://placehold.co/40x40.png" data-ai-hint="woman portrait" />
+                  <Card className="h-full border-2 border-primary/10 shadow-lg hover:shadow-primary/20 transition-shadow duration-300">
+                    <CardContent className="p-8 flex flex-col justify-between h-full">
+                      <Quote className="w-12 h-12 text-primary/20 mb-4" />
+                      <blockquote className="text-lg italic text-foreground/80 flex-grow">"CapitalMitra connected me with an investor who not only funded my startup but also became a key mentor. It's more than just a platform; it's a community."</blockquote>
+                      <div className="flex items-center gap-4 pt-6 mt-6 border-t">
+                        <Avatar className="h-12 w-12">
+                           <AvatarImage src="https://placehold.co/48x48.png" data-ai-hint="woman portrait" />
                            <AvatarFallback>FA</AvatarFallback>
                         </Avatar>
                         <div>
-                          <p className="font-semibold">Fatima Ahmed</p>
+                          <p className="font-semibold text-lg font-headline">Fatima Ahmed</p>
                           <p className="text-sm text-muted-foreground">Founder, Sobji Arat</p>
                         </div>
                       </div>
@@ -135,19 +112,17 @@ export default function Home() {
                   </Card>
                 </CarouselItem>
                 <CarouselItem className="md:basis-1/2 p-4">
-                  <Card className="h-full">
-                    <CardContent className="p-6 flex flex-col justify-between h-full">
-                      <div>
-                        <Quote className="w-8 h-8 text-accent mb-4" />
-                        <p className="mb-4">"As an investor, the quality of projects on CapitalMitra is outstanding. I've diversified my portfolio with ventures I truly believe in."</p>
-                      </div>
-                      <div className="flex items-center gap-4 pt-4 border-t">
-                        <Avatar>
-                           <AvatarImage src="https://placehold.co/40x40.png" data-ai-hint="man portrait" />
+                  <Card className="h-full border-2 border-primary/10 shadow-lg hover:shadow-primary/20 transition-shadow duration-300">
+                    <CardContent className="p-8 flex flex-col justify-between h-full">
+                        <Quote className="w-12 h-12 text-primary/20 mb-4" />
+                        <blockquote className="text-lg italic text-foreground/80 flex-grow">"As an investor, the quality of projects on CapitalMitra is outstanding. I've diversified my portfolio with ventures I truly believe in."</blockquote>
+                      <div className="flex items-center gap-4 pt-6 mt-6 border-t">
+                        <Avatar className="h-12 w-12">
+                           <AvatarImage src="https://placehold.co/48x48.png" data-ai-hint="man portrait" />
                            <AvatarFallback>RK</AvatarFallback>
                         </Avatar>
                         <div>
-                          <p className="font-semibold">Rahim Khan</p>
+                          <p className="font-semibold text-lg font-headline">Rahim Khan</p>
                           <p className="text-sm text-muted-foreground">Angel Investor</p>
                         </div>
                       </div>
@@ -155,19 +130,17 @@ export default function Home() {
                   </Card>
                 </CarouselItem>
                  <CarouselItem className="md:basis-1/2 p-4">
-                  <Card className="h-full">
-                    <CardContent className="p-6 flex flex-col justify-between h-full">
-                      <div>
-                        <Quote className="w-8 h-8 text-accent mb-4" />
-                        <p className="mb-4">"Mentoring on this platform has been incredibly rewarding. It's fulfilling to share my experience and see new businesses thrive with my guidance."</p>
-                      </div>
-                      <div className="flex items-center gap-4 pt-4 border-t">
-                        <Avatar>
-                           <AvatarImage src="https://placehold.co/40x40.png" data-ai-hint="woman professional" />
+                  <Card className="h-full border-2 border-primary/10 shadow-lg hover:shadow-primary/20 transition-shadow duration-300">
+                    <CardContent className="p-8 flex flex-col justify-between h-full">
+                        <Quote className="w-12 h-12 text-primary/20 mb-4" />
+                        <blockquote className="text-lg italic text-foreground/80 flex-grow">"Mentoring on this platform has been incredibly rewarding. It's fulfilling to share my experience and see new businesses thrive."</blockquote>
+                      <div className="flex items-center gap-4 pt-6 mt-6 border-t">
+                        <Avatar className="h-12 w-12">
+                           <AvatarImage src="https://placehold.co/48x48.png" data-ai-hint="woman professional" />
                            <AvatarFallback>SC</AvatarFallback>
                         </Avatar>
                         <div>
-                          <p className="font-semibold">Sadia Chowdhury</p>
+                          <p className="font-semibold text-lg font-headline">Sadia Chowdhury</p>
                           <p className="text-sm text-muted-foreground">Industry Mentor</p>
                         </div>
                       </div>
@@ -175,8 +148,8 @@ export default function Home() {
                   </Card>
                 </CarouselItem>
               </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
+              <CarouselPrevious className="-left-4" />
+              <CarouselNext className="-right-4" />
             </Carousel>
           </div>
         </section>

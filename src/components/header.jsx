@@ -7,7 +7,7 @@ export function Header() {
   return (
     <header className="px-4 lg:px-6 h-16 flex items-center bg-background/80 backdrop-blur-sm shadow-sm sticky top-0 z-50">
       <Link href="/" className="flex items-center justify-center">
-        <Image src="/logo.png" alt="CapitalMitra Logo" width={32} height={32} />
+        <Image src="/logo2.png" alt="CapitalMitra Logo" width={42} height={42} />
         <span className="ml-3 font-bold font-headline text-xl text-primary">CapitalMitra</span>
       </Link>
       <nav className="ml-auto flex gap-4 sm:gap-6 items-center">
