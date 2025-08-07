@@ -90,10 +90,10 @@ export default function Home() {
                 align: "start",
                 loop: true,
               }}
-              className="w-full max-w-6xl mx-auto"
+              className="w-full max-w-7xl mx-auto"
             >
               <CarouselContent>
-                <CarouselItem className="md:basis-1/2 lg:basis-1/3 p-4">
+                <CarouselItem className="md:basis-1/2 lg:basis-1/4 p-4">
                   <Card className="h-full border-2 border-primary/10 shadow-lg hover:shadow-primary/20 transition-shadow duration-300">
                     <CardContent className="p-8 flex flex-col justify-between h-full">
                       <Quote className="w-12 h-12 text-primary/20 mb-4" />
@@ -111,7 +111,7 @@ export default function Home() {
                     </CardContent>
                   </Card>
                 </CarouselItem>
-                <CarouselItem className="md:basis-1/2 lg:basis-1/3 p-4">
+                <CarouselItem className="md:basis-1/2 lg:basis-1/4 p-4">
                   <Card className="h-full border-2 border-primary/10 shadow-lg hover:shadow-primary/20 transition-shadow duration-300">
                     <CardContent className="p-8 flex flex-col justify-between h-full">
                         <Quote className="w-12 h-12 text-primary/20 mb-4" />
@@ -129,7 +129,7 @@ export default function Home() {
                     </CardContent>
                   </Card>
                 </CarouselItem>
-                 <CarouselItem className="md:basis-1/2 lg:basis-1/3 p-4">
+                 <CarouselItem className="md:basis-1/2 lg:basis-1/4 p-4">
                   <Card className="h-full border-2 border-primary/10 shadow-lg hover:shadow-primary/20 transition-shadow duration-300">
                     <CardContent className="p-8 flex flex-col justify-between h-full">
                         <Quote className="w-12 h-12 text-primary/20 mb-4" />
@@ -142,6 +142,24 @@ export default function Home() {
                         <div>
                           <p className="font-semibold text-lg font-headline">Sadia Chowdhury</p>
                           <p className="text-sm text-muted-foreground">Industry Mentor</p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+                 <CarouselItem className="md:basis-1/2 lg:basis-1/4 p-4">
+                  <Card className="h-full border-2 border-primary/10 shadow-lg hover:shadow-primary/20 transition-shadow duration-300">
+                    <CardContent className="p-8 flex flex-col justify-between h-full">
+                        <Quote className="w-12 h-12 text-primary/20 mb-4" />
+                        <blockquote className="text-lg italic text-foreground/80 flex-grow">"The insights and connections I've gained here have been invaluable for my clients' portfolios. A must-have tool for financial advisors."</blockquote>
+                      <div className="flex items-center gap-4 pt-6 mt-6 border-t">
+                        <Avatar className="h-12 w-12">
+                           <AvatarImage src="https://placehold.co/48x48.png" data-ai-hint="man professional" />
+                           <AvatarFallback>AI</AvatarFallback>
+                        </Avatar>
+                        <div>
+                          <p className="font-semibold text-lg font-headline">Al-Amin Islam</p>
+                          <p className="text-sm text-muted-foreground">Financial Advisor</p>
                         </div>
                       </div>
                     </CardContent>
