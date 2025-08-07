@@ -13,7 +13,6 @@ import {
   Target,
   Rocket,
   Handshake,
-  UserCheck,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -28,8 +27,8 @@ import React from "react";
 export function DashboardLayout({ children, userType }) {
     const getNavItems = () => {
         const commonItems = [
-            { href: "/explore-startups", icon: Rocket, label: "Explore Startups" },
-            { href: "#", icon: User, label: "Profile" },
+            { href: `/explore-startups`, icon: Rocket, label: "Explore Startups" },
+            { href: `/${userType}/dashboard`, icon: User, label: "Profile" },
             { href: "#", icon: Settings, label: "Settings" },
         ];
 

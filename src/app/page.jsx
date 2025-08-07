@@ -11,56 +11,57 @@ import { Footer } from "@/components/footer";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
+const profiles = [
+    { src: 'https://placehold.co/300x500.png', name: 'Rashi', hint: 'woman smiling' },
+    { src: 'https://placehold.co/300x500.png', name: 'Apoorva', hint: 'woman posing' },
+    { src: 'https://placehold.co/300x500.png', name: 'Prachi', hint: 'woman outdoors' },
+    { src: 'https://placehold.co/300x500.png', name: 'Aditya', hint: 'man smiling' },
+    { src: 'https://placehold.co/300x500.png', name: 'Sana', hint: 'woman fashion' },
+    { src: 'https://placehold.co/300x500.png', name: 'Shruti', hint: 'woman happy' },
+    { src: 'https://placehold.co/300x500.png', name: 'Eshna', hint: 'woman glasses' },
+    { src: 'https://placehold.co/300x500.png', name: 'Rahul', hint: 'man casual' },
+    { src: 'https://placehold.co/300x500.png', name: 'Priya', hint: 'woman portrait' },
+    { src: 'https://placehold.co/300x500.png', name: 'Vikram', hint: 'man outdoors' },
+    { src: 'https://placehold.co/300x500.png', name: 'Neha', hint: 'woman night' },
+    { src: 'https://placehold.co/300x500.png', name: 'Amit', hint: 'man professional' },
+]
+
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-background">
       <Header />
       <main className="flex-1">
-        <section className="w-full py-20 md:py-32 lg:py-40 relative">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent"></div>
-           <Image
-              src="https://placehold.co/1920x1080.png"
-              layout="fill"
-              objectFit="cover"
-              alt="Professional business meeting"
-              data-ai-hint="professional business meeting"
-              className="opacity-5"
-            />
-          <div className="container px-4 md:px-6 relative z-10">
-            <div className="grid gap-10 lg:grid-cols-2 lg:gap-12">
-              <div className="flex flex-col justify-center space-y-6">
-                <div className="space-y-4">
-                  <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none font-headline text-primary">
-                    Where Vision Meets Capital
-                  </h1>
-                  <p className="max-w-[600px] text-muted-foreground md:text-xl font-body">
-                    CapitalMitra is the premier platform connecting ambitious founders with strategic investors and expert mentors to build the future of business.
-                  </p>
-                </div>
-                <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Button asChild size="lg">
-                    <Link href="/login-selector">
-                      Get Started
-                      <ArrowRight className="ml-2 h-5 w-5" />
-                    </Link>
-                  </Button>
-                  <Button asChild size="lg" variant="outline">
-                    <Link href="#how-it-works">Learn More</Link>
-                  </Button>
-                </div>
-              </div>
-              <div className="hidden lg:flex items-center justify-center">
-                 <Image
-                  src="https://placehold.co/600x400.png"
-                  width="600"
-                  height="400"
-                  alt="Hero"
-                  data-ai-hint="collaboration business"
-                  className="mx-auto aspect-video overflow-hidden rounded-xl object-cover shadow-2xl"
-                />
-              </div>
+        <section className="relative w-full h-[80vh] overflow-hidden flex items-center justify-center">
+            <div className="absolute inset-0 grid grid-cols-4 md:grid-cols-6 -skew-y-12 scale-150 gap-2 md:gap-4 p-4 opacity-30">
+                {profiles.map((p, i) => (
+                    <div key={i} className="rounded-2xl overflow-hidden shadow-lg">
+                        <Image
+                            src={p.src}
+                            width={300}
+                            height={500}
+                            alt={p.name}
+                            data-ai-hint={p.hint}
+                            className="w-full h-full object-cover"
+                        />
+                    </div>
+                ))}
             </div>
-          </div>
+            <div className="absolute inset-0 bg-black/50"></div>
+            <div className="relative z-10 text-center text-white px-4">
+                <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tighter drop-shadow-lg">
+                    Start Something Epic.
+                </h1>
+                <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-neutral-200 drop-shadow-md">
+                   CapitalMitra is the premier platform connecting ambitious founders with strategic investors and expert mentors to build the future of business.
+                </p>
+                <div className="mt-8">
+                    <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-10 py-6 rounded-full shadow-2xl transition-transform hover:scale-105">
+                        <Link href="/login-selector">
+                            Create Account
+                        </Link>
+                    </Button>
+                </div>
+            </div>
         </section>
 
         <section id="features" className="w-full py-12 md:py-24 lg:py-32 bg-gray-50 dark:bg-gray-900">
